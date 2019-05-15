@@ -1,0 +1,7 @@
+Reflection on IBI Practical 12
+I think it is not easy, we used Numpy and matplotlib that we never used before.
+It is not hard either, the first two models can be figured out if careful enough. The third model also can be figured out with Melanie's guidance.
+When coding the first two models, I did'nt know how to label the lines and couldn't plot the lines with different colors(in task 2).
+I searched for many online resources to get one solution to label the lines. I tried out different ways and when I multiply 30 to "i" in the code "color=cm.viridis(30)", there came beatifully colored lines in my plot.
+What I enjoy the most is successfully output the perfect plots.
+The most important thing I learned is to try many times and trust myself. Keep trying and keep searching for solutions would lead me to success.

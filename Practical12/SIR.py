@@ -8,8 +8,6 @@ Created on Wed May  8 11:23:03 2019
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-
 time = 0
 sus = 9999
 inf = 1
@@ -45,5 +43,5 @@ P_rec, = plt.plot(record_rec)
 P_rec.set_label('recovered people')
 plt.legend()
 
-plt.savefig("C:/Users/11601/Desktop/IBI/IBI1_2018-19/Practical12/SIR",type="png")
+plt.savefig("SIR",type="png")
 plt.show()

@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-#"""
-#Created on Wed Mar 13 10:44:30 2019
-#
-#@author: 11601
-#"""
-#
+"""
+Created on Wed Mar 13 10:44:30 2019
+
+@author: 11601
+"""
 
 n=3500
 i=12
@@ -16,6 +15,5 @@ while i>=0:
     i=i-1
  else:
     i=i-1
-    
 print(answer)
     

@@ -114,7 +114,7 @@ while n<=99:
     pred, = plt.plot(result[:,0])
     prey, = plt.plot(result[:,1])
     #under while loop plot 100 different lines with random parameters
-#after plotting, show the plot
+#after 100 times plotting, show the plot
 plt.title("Time course") 
 plt.xlabel("time") 
 plt.ylabel("population size")

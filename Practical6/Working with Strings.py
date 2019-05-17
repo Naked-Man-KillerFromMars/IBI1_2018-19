@@ -6,28 +6,32 @@
 #"""
 #
 import re
-xfile = open(r'C:\Users\11601\Desktop\IBI\IBI1_2018-19\Practical6\address_information.csv','r')
+xfile = open(r'address_information.csv','r')
 
 for cheese in xfile:
     unit = cheese.split(',')
-    print(unit)
     name = unit.pop(0)
-    print(name)
     address = unit.pop(0)
     print(address)
+    com = []
+    add = list(address)
+    a = add.pop(-1)
+    b = add.pop(-1)
+    c = add.pop(-1)
+    d = add.pop(-1)
+    com.append(d)
+    com.append(c)
+    com.append(b)
+    com.append(a)
+    com = ''.join(com)
+    if com == '.com':
+        print('this address is valid')
+    else:
+        print('this address is invalid')
+    
     text = unit.pop(0)
     print(text)
     
-    
-
-
-#
-#
-#
-#
-
-
-
 
     
     import smtplib
@@ -35,11 +39,9 @@ for cheese in xfile:
     from email.header import Header
     
     
-#    for person in address:        #loop for sending emails
-    mail = open('body.txt')    #open the file and replace user names
+    mail = open('body.txt')
     content = mail.read()
     content = re.sub(r'User',name,content)
-    
     
     
     
@@ -64,14 +66,12 @@ for cheese in xfile:
         smtpObj.sendmail(sender, receivers, message.as_string())
         print ("Mail sent successfully")
     except smtplib.SMTPException:
-        print ("fail")
+        print ("Failed")
     if mail:
         mail.close        
 if xfile:
     xfile.close
-    
-#close the txt file
-#remember to close the file
+
 
 
 

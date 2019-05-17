@@ -7,7 +7,7 @@
 
 
 #counting AGTC
-sequence = 'ATGCTTCAGAAAGGTCTTACG'
+sequence = input('Please give me sequence of DNA:')
 sequence = list(sequence)
 
 myDict = {}
@@ -16,10 +16,9 @@ for word in sequence:
   myDict[word] += 1
  else:
   myDict[word] = 1
-
 myDict
 
-text = input(myDict)
+print(myDict)
 
 #plotting
 import matplotlib.pyplot as plt
@@ -29,21 +28,8 @@ g = int(myDict['G'])
 t = int(myDict['T'])
 c = int(myDict['C'])
 sizes = [a, g, t, c]
-explode = (0.01, 0.01, 0.01, 0.01)
+explode = (0.05, 0.05, 0.05, 0.05)
 plt.pie(sizes,explode=explode, labels=labels, autopct='%1.1f%%',shadow=False, startangle=90)
+plt.title('pie of the four DNA nucleotides')
 plt.axis('equal')
 plt.show()
-
-
-#reverse split and sort a string 
-lyrics = "This is Major Tom to Ground Control Im stepping through the door And I'm floating in a most peculiar way And the stars look very different today"
-
-M = lyrics[:]
-
-M = M[-1::-1]
-
-splitM = M.split(' ')
-
-splitM.sort()
-
-print(splitM)

@@ -19,7 +19,5 @@ while p==False:
         if n%i == 0:
             p=False
 
-
-     
 print(n)
             

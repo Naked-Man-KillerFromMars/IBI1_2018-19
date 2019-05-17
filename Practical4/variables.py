@@ -1,7 +1,8 @@
+"""
+Created on Wed Mar 13 09:29:01 2019
 
-#Created on Wed Mar 13 09:29:01 2019
-
-#@author: 11601
+@author: 11601
+"""
 
 a=812
 b=812812
@@ -13,7 +14,7 @@ print('can b be divided by 7?-',b%7 == 0)
 c=b/7
 d=c/11
 e=d/13
-print('a =',a,' b =',b)
+print('a =',a,' e =',int(e))
 if e < a:
     print('a is greater than e')
 elif e == a:
